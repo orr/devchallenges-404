@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --primary-color: #333333;
+    --secondary-color: #4F4F4F;
+    --footer-color: #BDBDBD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 77px 24px 77px;
+}
+
+.header-h1 {
+    font-family: 'Inconsolata', monospace;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 100%;
+    
+}
+
+.image-hero {
+    width: 50%;
+    align-self: center;
+}
+
+.image-hero img{
+    width: 90%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1{
+    font-family: 'Space Mono', monospace;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: normal;
+    margin-bottom: 36px;
+}
+
+.hero-text p{
+    color: var(--secondary-color);
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 64px;
+    
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: inline-block;
+    padding: 24px 43px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.87rem;
+    cursor: pointer;
+    margin-bottom: 64px;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.87rem;
+    color: var(--footer-color);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer strong{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 740px) {
+    
+    .container {
+        padding: 20px 24px;
+    }
+ 
+    .main-wrapper {
+        flex-direction: column;
+        padding-top: 64px;
+    }
+
+    .image-hero {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+}
